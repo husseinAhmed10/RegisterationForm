@@ -1,0 +1,96 @@
+/*Primary selectors*/
+body{
+	background-color: #FFF8DC;
+	color: #000;
+	font-family: "Time New Roman", Times, serif;
+	font-size: 100%;
+}
+p1{
+	Color: rgb(128, 159, 255);
+    text-align:center;
+	font-size: 500%;
+	
+}
+
+/* IDs and classes */
+
+#fullpage {
+	margin: 100px;
+}
+
+.label_col {
+	text-align: Left;
+	
+}
+
+.input_col{
+	text-align: left;
+	font-size: 100%;
+}
+
+.feedback_col {
+	text-align: left;
+	vertical-align: middle;
+	color: red;
+	font-size: small;
+}
+/*
+Use the :hover selector to change the style of a button when you move the mouse over it.
+
+Tip: Use the transition-duration property to determine the speed of the "hover" effect:
+*/
+.Button {
+	margin: auto;
+	background-color: 	hsl(105, 100%, 60%);
+	color: white;
+	text-align: center;
+	font-size: 10px;
+	padding: 10px 24px;
+	border-radius: 200%;
+	transition:all 0.4s;
+	cursor: pointer;
+	
+}
+.Button:hover {
+  background-color: #4CAF50;
+  color: white;
+   padding-right: 25px;
+}
+
+
+
+
+
+
+
+
+.Button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition:all 0.5s;
+}
+.Button:hover span {
+
+}
+.Button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

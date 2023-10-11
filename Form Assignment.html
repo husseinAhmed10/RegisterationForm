@@ -1,0 +1,142 @@
+<! DocType html >
+
+<html>
+<head>
+
+<title> Form Assignment </title>
+<script type="text/javascript" src="Form Assignment.js"></script>
+<link rel="stylesheet" href="Form Assignment.css">
+</head>
+
+<body>
+
+<div style="Color: rgb(128, 159, 255); text-align:center; font-size: 500%;"> Faculty Submission </div>
+
+<form>
+<p id=""fullpage"">
+<img width="800" height="500" style="float:right" src="https://www.marj3.com/wp-content/uploads/2019/02/University-of-St-Andrews.jpg">
+<table>
+<tr>
+
+<!  TEXTAREA(all one word): This yells to the form command above that here will sit another form item. This one will be a text area box.
+NAMEis the same as before. The information the reader puts in this box will arrive in your e-mail box denoted by whatever name you use. In this case, what is written in this box will arrive in your e-mail box with the words, "comment=".
+ROWStells the computer how many rows of text it will accept, and...
+COLS tells the computer how many characters will be in each row. This text box will accept 6 rows of text each being 40 characters long. Go ahead and make the box bigger or smaller. You're in charge here  >
+
+<td class="label_col">First Name:</td>
+<td></td>
+<td class="label_col">Last Name:</td>
+</tr>
+<tr>
+<td class="input_col"><input name="firstName" id="firstName" type="text" onblur="validateFirstName();" required></td>
+<td class="feedback_col"><span id="firstNamePrompt">&nbsp;</span></td>
+<td class="input_col"><input name="LastName" id="LastName" type="text" onblur="validateLastName();" required></td>
+<td class="feedback_col"><span id="LastNamePrompt">&nbsp;</span></td>
+</tr>
+<tr>
+<td> Date of Birth:
+<input type="date" id="birthday" name="birthday">
+</td>
+</tr>
+<tr>
+<td class="label_col">Address:</td>
+</tr>
+<tr>
+
+<td class="input_col"><textarea name="Address" id="Address" type="text" rows="3" cols="20">  </textarea></td>
+</tr>
+<tr>
+<td class="label_col">Phone Number:</td>
+</tr>
+<tr>
+<td class="input_col"><input name="Number" id="Number" type="text" required></td>
+</tr>
+<tr>
+<td class="label_col" for="email">
+Enter your email:
+  <input type="email" id="email" name="email" required>
+</td>
+</tr>
+<tr>
+<td class="label_col" >
+Enter your Password:
+ <input type="password" id="pwd" name="pwd" required>
+</td>
+</tr>
+<tr>
+<td>
+
+<! Pop-Up box SELECTtells the computer another form is going here. This time it's a SELECT or Pop-Up form.
+NAME: Same as above. This is the heading of the form item. It denotes how the results of the reader will arrive at your e-mail box. In this case it will say; "Favorite_Color=" and then the reader's choice.
+SIZEdenotes the size of the box. Here, 1 means one line or item is shown. Try putting two there if you'd like to see what it does. I prefer just one. More than one item tends to defeat the purpose of the Pop-Up Box.
+OPTION SELECTEDdenotes which option will appear in the box. Note on the page that "Blue" is visible.
+OPTIONdenotes another choice that will be visible when you click on the item.
+/SELECTfinishes off the entire deal. >
+
+Choose Faculty
+<select id="Faculty" name="Faculty" > 
+    <option value="Law">Law</option>
+    <option value="Economics">Economics</option>
+    <option value="Mass Communication" >Mass Communication</option>
+    <option value="Engineering">Engineering</option>
+	<option value="Pharmacy" >Pharmacy</option>
+    <option value="Medicine">Medicine</option>
+	<option value="Others"  >Others</option>
+  </select>
+ </td>
+ <td></td><!If choose others, should write its faculty>
+</tr>
+<tr>
+
+<! INPUT: This yells to the computer "HEY! Here's a form item to deal with!"
+TYPE: This tells the computer what type of form item it will be. In this case, it's a radio button.
+NAME: This names the category the button is in on your form page. Let's say you have six different choices under one heading. Like six ice cream flavors all under the heading, "Favorite Ice Cream." "Ice Cream" would be the category. It's the heading of the group of radio buttons.
+VALUE is the name assigned to the button. Like in the ice cream example above, you have six buttons each labeled with six different flavors. Well, you would give one the value of vanilla, one chocolate, etc., etc >
+
+<td>Gender</td>
+<td><input type="radio" name="gender" id="gender_Male" value="Male" required />Male</td>
+<td><input type="radio" name="gender" id="gender_Female" value="Female" />Female</td>
+</tr>
+<tr>
+<td>INFO</td>
+</tr>
+<tr>
+<td><input type="checkbox" id="Rules and Liscence" name="Rules and Liscence" value="Rules and Liscence" required> I accept all the rules</td>
+</tr>
+<tr>
+<td>
+Please Upload your Resume
+</td>
+</tr>
+<tr>
+<td>
+ <input type="file" id="myfile" name="myfile"><br><br>
+</td>
+</tr>
+<tr>
+<td>
+<input type="reset">
+</td>
+</tr>
+<tr>
+<td>
+<button class="Button" style="vertical-align:middle" onclick="Outputform()">Submit </button>
+<div id="FormFilled"></div>
+</td>
+</tr>
+<tr>
+<td> <div id="FormFilled"></div> </td>
+</tr>
+
+
+
+</table>
+</p>
+</form>
+
+
+
+</body>
+
+
+</html>
